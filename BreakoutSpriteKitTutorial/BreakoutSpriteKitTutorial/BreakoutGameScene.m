@@ -77,4 +77,16 @@ static NSString* blockNodeCategoryName = @"blockNode";
     return self;
 }
 
+-(void)touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event {
+    /* Called when a touch begins */
+    UITouch* touch = [touches anyObject];
+    CGPoint touchLocation = [touch locationInNode:self];
+    
+    SKPhysicsBody* body = [self.physicsWorld bodyAtPoint:touchLocation];
+    if (body && [body.node.name isEqualToString: paddleCategoryName]) {
+        NSLog(@"Began touch on paddle");
+        self.isFingerOnPaddle = YES;
+    }
+}
+
 @end
