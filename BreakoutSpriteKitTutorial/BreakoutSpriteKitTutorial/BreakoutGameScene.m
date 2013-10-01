@@ -13,6 +13,7 @@ static NSString* paddleCategoryName = @"paddle";
 static NSString* blockCategoryName = @"block";
 static NSString* blockNodeCategoryName = @"blockNode";
 
+
 @implementation BreakoutGameScene
 
 -(id)initWithSize:(CGSize)size {
@@ -55,6 +56,16 @@ static NSString* blockNodeCategoryName = @"blockNode";
         ball.physicsBody.allowsRotation = NO;
         
         [ball.physicsBody applyImpulse:CGVectorMake(10.0f, -10.0f)];
+        
+        SKSpriteNode* paddle = [[SKSpriteNode alloc] initWithImageNamed: @"paddle.png"];
+        paddle.name = paddleCategoryName;
+        paddle.position = CGPointMake(CGRectGetMidX(self.frame), paddle.frame.size.height * 0.6f);
+        [self addChild:paddle];
+        paddle.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:paddle.frame.size];
+        paddle.physicsBody.restitution = 0.1f;
+        paddle.physicsBody.friction = 0.4f;
+        // make physicsBody static
+        paddle.physicsBody.dynamic = NO;
     }
     return self;
 }
