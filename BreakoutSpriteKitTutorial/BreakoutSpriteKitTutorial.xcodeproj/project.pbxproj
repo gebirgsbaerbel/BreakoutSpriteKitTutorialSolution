@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66DF6A1717FB871B00CC9BD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DF6A1617FB871B00CC9BD1 /* Foundation.framework */; };
+		66DF6A1917FB871B00CC9BD1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DF6A1817FB871B00CC9BD1 /* CoreGraphics.framework */; };
+		66DF6A1B17FB871B00CC9BD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DF6A1A17FB871B00CC9BD1 /* UIKit.framework */; };
+		66DF6A1D17FB871B00CC9BD1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DF6A1C17FB871B00CC9BD1 /* SpriteKit.framework */; };
+		66DF6A2317FB871B00CC9BD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A2117FB871B00CC9BD1 /* InfoPlist.strings */; };
+		66DF6A2517FB871B00CC9BD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DF6A2417FB871B00CC9BD1 /* main.m */; };
+		66DF6A2917FB871B00CC9BD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DF6A2817FB871B00CC9BD1 /* AppDelegate.m */; };
+		66DF6A2C17FB871B00CC9BD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A2A17FB871B00CC9BD1 /* Main.storyboard */; };
+		66DF6A2F17FB871B00CC9BD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DF6A2E17FB871B00CC9BD1 /* ViewController.m */; };
+		66DF6A3217FB871B00CC9BD1 /* BreakoutGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DF6A3117FB871B00CC9BD1 /* BreakoutGameScene.m */; };
+		66DF6A3617FB871B00CC9BD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A3517FB871B00CC9BD1 /* Images.xcassets */; };
+		66DF6A3D17FB871B00CC9BD1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DF6A3C17FB871B00CC9BD1 /* XCTest.framework */; };
+		66DF6A3E17FB871B00CC9BD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DF6A1617FB871B00CC9BD1 /* Foundation.framework */; };
+		66DF6A3F17FB871B00CC9BD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DF6A1A17FB871B00CC9BD1 /* UIKit.framework */; };
+		66DF6A4717FB871B00CC9BD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A4517FB871B00CC9BD1 /* InfoPlist.strings */; };
+		66DF6A4917FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DF6A4817FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests.m */; };
+		66DF6A5A17FB87DB00CC9BD1 /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A5317FB87DA00CC9BD1 /* assets.atlas */; };
+		66DF6A5B17FB87DB00CC9BD1 /* bg-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A5517FB87DA00CC9BD1 /* bg-568h@2x~iphone.png */; };
+		66DF6A5C17FB87DB00CC9BD1 /* bg@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A5617FB87DA00CC9BD1 /* bg@2x~ipad.png */; };
+		66DF6A5D17FB87DB00CC9BD1 /* bg@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A5717FB87DA00CC9BD1 /* bg@2x~iphone.png */; };
+		66DF6A5E17FB87DB00CC9BD1 /* bg~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A5817FB87DA00CC9BD1 /* bg~ipad.png */; };
+		66DF6A5F17FB87DB00CC9BD1 /* bg~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A5917FB87DA00CC9BD1 /* bg~iphone.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66DF6A4017FB871B00CC9BD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66DF6A0B17FB871B00CC9BD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66DF6A1217FB871B00CC9BD1;
+			remoteInfo = BreakoutSpriteKitTutorial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		66DF6A1317FB871B00CC9BD1 /* BreakoutSpriteKitTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakoutSpriteKitTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66DF6A1617FB871B00CC9BD1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66DF6A1817FB871B00CC9BD1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		66DF6A1A17FB871B00CC9BD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		66DF6A1C17FB871B00CC9BD1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		66DF6A2017FB871B00CC9BD1 /* BreakoutSpriteKitTutorial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BreakoutSpriteKitTutorial-Info.plist"; sourceTree = "<group>"; };
+		66DF6A2217FB871B00CC9BD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66DF6A2417FB871B00CC9BD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66DF6A2617FB871B00CC9BD1 /* BreakoutSpriteKitTutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BreakoutSpriteKitTutorial-Prefix.pch"; sourceTree = "<group>"; };
+		66DF6A2717FB871B00CC9BD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		66DF6A2817FB871B00CC9BD1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		66DF6A2B17FB871B00CC9BD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66DF6A2D17FB871B00CC9BD1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		66DF6A2E17FB871B00CC9BD1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		66DF6A3017FB871B00CC9BD1 /* BreakoutGameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BreakoutGameScene.h; sourceTree = "<group>"; };
+		66DF6A3117FB871B00CC9BD1 /* BreakoutGameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreakoutGameScene.m; sourceTree = "<group>"; };
+		66DF6A3517FB871B00CC9BD1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		66DF6A3B17FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakoutSpriteKitTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66DF6A3C17FB871B00CC9BD1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		66DF6A4417FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BreakoutSpriteKitTutorialTests-Info.plist"; sourceTree = "<group>"; };
+		66DF6A4617FB871B00CC9BD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66DF6A4817FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreakoutSpriteKitTutorialTests.m; sourceTree = "<group>"; };
+		66DF6A5317FB87DA00CC9BD1 /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = "<group>"; };
+		66DF6A5517FB87DA00CC9BD1 /* bg-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-568h@2x~iphone.png"; sourceTree = "<group>"; };
+		66DF6A5617FB87DA00CC9BD1 /* bg@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x~ipad.png"; sourceTree = "<group>"; };
+		66DF6A5717FB87DA00CC9BD1 /* bg@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x~iphone.png"; sourceTree = "<group>"; };
+		66DF6A5817FB87DA00CC9BD1 /* bg~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg~ipad.png"; sourceTree = "<group>"; };
+		66DF6A5917FB87DA00CC9BD1 /* bg~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg~iphone.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66DF6A1017FB871B00CC9BD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DF6A1917FB871B00CC9BD1 /* CoreGraphics.framework in Frameworks */,
+				66DF6A1B17FB871B00CC9BD1 /* UIKit.framework in Frameworks */,
+				66DF6A1D17FB871B00CC9BD1 /* SpriteKit.framework in Frameworks */,
+				66DF6A1717FB871B00CC9BD1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66DF6A3817FB871B00CC9BD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DF6A3D17FB871B00CC9BD1 /* XCTest.framework in Frameworks */,
+				66DF6A3F17FB871B00CC9BD1 /* UIKit.framework in Frameworks */,
+				66DF6A3E17FB871B00CC9BD1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66DF6A0A17FB871A00CC9BD1 = {
+			isa = PBXGroup;
+			children = (
+				66DF6A1E17FB871B00CC9BD1 /* BreakoutSpriteKitTutorial */,
+				66DF6A4217FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests */,
+				66DF6A1517FB871B00CC9BD1 /* Frameworks */,
+				66DF6A1417FB871B00CC9BD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66DF6A1417FB871B00CC9BD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66DF6A1317FB871B00CC9BD1 /* BreakoutSpriteKitTutorial.app */,
+				66DF6A3B17FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66DF6A1517FB871B00CC9BD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66DF6A1617FB871B00CC9BD1 /* Foundation.framework */,
+				66DF6A1817FB871B00CC9BD1 /* CoreGraphics.framework */,
+				66DF6A1A17FB871B00CC9BD1 /* UIKit.framework */,
+				66DF6A1C17FB871B00CC9BD1 /* SpriteKit.framework */,
+				66DF6A3C17FB871B00CC9BD1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66DF6A1E17FB871B00CC9BD1 /* BreakoutSpriteKitTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				66DF6A2717FB871B00CC9BD1 /* AppDelegate.h */,
+				66DF6A2817FB871B00CC9BD1 /* AppDelegate.m */,
+				66DF6A2A17FB871B00CC9BD1 /* Main.storyboard */,
+				66DF6A2D17FB871B00CC9BD1 /* ViewController.h */,
+				66DF6A2E17FB871B00CC9BD1 /* ViewController.m */,
+				66DF6A3017FB871B00CC9BD1 /* BreakoutGameScene.h */,
+				66DF6A3117FB871B00CC9BD1 /* BreakoutGameScene.m */,
+				66DF6A5217FB87DA00CC9BD1 /* Resources */,
+				66DF6A3517FB871B00CC9BD1 /* Images.xcassets */,
+				66DF6A1F17FB871B00CC9BD1 /* Supporting Files */,
+			);
+			path = BreakoutSpriteKitTutorial;
+			sourceTree = "<group>";
+		};
+		66DF6A1F17FB871B00CC9BD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66DF6A2017FB871B00CC9BD1 /* BreakoutSpriteKitTutorial-Info.plist */,
+				66DF6A2117FB871B00CC9BD1 /* InfoPlist.strings */,
+				66DF6A2417FB871B00CC9BD1 /* main.m */,
+				66DF6A2617FB871B00CC9BD1 /* BreakoutSpriteKitTutorial-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66DF6A4217FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				66DF6A4817FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests.m */,
+				66DF6A4317FB871B00CC9BD1 /* Supporting Files */,
+			);
+			path = BreakoutSpriteKitTutorialTests;
+			sourceTree = "<group>";
+		};
+		66DF6A4317FB871B00CC9BD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66DF6A4417FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests-Info.plist */,
+				66DF6A4517FB871B00CC9BD1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66DF6A5217FB87DA00CC9BD1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				66DF6A5317FB87DA00CC9BD1 /* assets.atlas */,
+				66DF6A5417FB87DA00CC9BD1 /* backgrounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		66DF6A5417FB87DA00CC9BD1 /* backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				66DF6A5517FB87DA00CC9BD1 /* bg-568h@2x~iphone.png */,
+				66DF6A5617FB87DA00CC9BD1 /* bg@2x~ipad.png */,
+				66DF6A5717FB87DA00CC9BD1 /* bg@2x~iphone.png */,
+				66DF6A5817FB87DA00CC9BD1 /* bg~ipad.png */,
+				66DF6A5917FB87DA00CC9BD1 /* bg~iphone.png */,
+			);
+			path = backgrounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66DF6A1217FB871B00CC9BD1 /* BreakoutSpriteKitTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66DF6A4C17FB871B00CC9BD1 /* Build configuration list for PBXNativeTarget "BreakoutSpriteKitTutorial" */;
+			buildPhases = (
+				66DF6A0F17FB871B00CC9BD1 /* Sources */,
+				66DF6A1017FB871B00CC9BD1 /* Frameworks */,
+				66DF6A1117FB871B00CC9BD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BreakoutSpriteKitTutorial;
+			productName = BreakoutSpriteKitTutorial;
+			productReference = 66DF6A1317FB871B00CC9BD1 /* BreakoutSpriteKitTutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66DF6A3A17FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66DF6A4F17FB871B00CC9BD1 /* Build configuration list for PBXNativeTarget "BreakoutSpriteKitTutorialTests" */;
+			buildPhases = (
+				66DF6A3717FB871B00CC9BD1 /* Sources */,
+				66DF6A3817FB871B00CC9BD1 /* Frameworks */,
+				66DF6A3917FB871B00CC9BD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66DF6A4117FB871B00CC9BD1 /* PBXTargetDependency */,
+			);
+			name = BreakoutSpriteKitTutorialTests;
+			productName = BreakoutSpriteKitTutorialTests;
+			productReference = 66DF6A3B17FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66DF6A0B17FB871B00CC9BD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Barbara Köhler";
+				TargetAttributes = {
+					66DF6A3A17FB871B00CC9BD1 = {
+						TestTargetID = 66DF6A1217FB871B00CC9BD1;
+					};
+				};
+			};
+			buildConfigurationList = 66DF6A0E17FB871B00CC9BD1 /* Build configuration list for PBXProject "BreakoutSpriteKitTutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66DF6A0A17FB871A00CC9BD1;
+			productRefGroup = 66DF6A1417FB871B00CC9BD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66DF6A1217FB871B00CC9BD1 /* BreakoutSpriteKitTutorial */,
+				66DF6A3A17FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66DF6A1117FB871B00CC9BD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DF6A5E17FB87DB00CC9BD1 /* bg~ipad.png in Resources */,
+				66DF6A2317FB871B00CC9BD1 /* InfoPlist.strings in Resources */,
+				66DF6A3617FB871B00CC9BD1 /* Images.xcassets in Resources */,
+				66DF6A5A17FB87DB00CC9BD1 /* assets.atlas in Resources */,
+				66DF6A5C17FB87DB00CC9BD1 /* bg@2x~ipad.png in Resources */,
+				66DF6A5F17FB87DB00CC9BD1 /* bg~iphone.png in Resources */,
+				66DF6A5B17FB87DB00CC9BD1 /* bg-568h@2x~iphone.png in Resources */,
+				66DF6A2C17FB871B00CC9BD1 /* Main.storyboard in Resources */,
+				66DF6A5D17FB87DB00CC9BD1 /* bg@2x~iphone.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66DF6A3917FB871B00CC9BD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DF6A4717FB871B00CC9BD1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66DF6A0F17FB871B00CC9BD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DF6A3217FB871B00CC9BD1 /* BreakoutGameScene.m in Sources */,
+				66DF6A2F17FB871B00CC9BD1 /* ViewController.m in Sources */,
+				66DF6A2917FB871B00CC9BD1 /* AppDelegate.m in Sources */,
+				66DF6A2517FB871B00CC9BD1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66DF6A3717FB871B00CC9BD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DF6A4917FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66DF6A4117FB871B00CC9BD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66DF6A1217FB871B00CC9BD1 /* BreakoutSpriteKitTutorial */;
+			targetProxy = 66DF6A4017FB871B00CC9BD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66DF6A2117FB871B00CC9BD1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66DF6A2217FB871B00CC9BD1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		66DF6A2A17FB871B00CC9BD1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66DF6A2B17FB871B00CC9BD1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66DF6A4517FB871B00CC9BD1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66DF6A4617FB871B00CC9BD1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66DF6A4A17FB871B00CC9BD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		66DF6A4B17FB871B00CC9BD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66DF6A4D17FB871B00CC9BD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BreakoutSpriteKitTutorial/BreakoutSpriteKitTutorial-Prefix.pch";
+				INFOPLIST_FILE = "BreakoutSpriteKitTutorial/BreakoutSpriteKitTutorial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		66DF6A4E17FB871B00CC9BD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BreakoutSpriteKitTutorial/BreakoutSpriteKitTutorial-Prefix.pch";
+				INFOPLIST_FILE = "BreakoutSpriteKitTutorial/BreakoutSpriteKitTutorial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		66DF6A5017FB871B00CC9BD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BreakoutSpriteKitTutorial.app/BreakoutSpriteKitTutorial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BreakoutSpriteKitTutorial/BreakoutSpriteKitTutorial-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BreakoutSpriteKitTutorialTests/BreakoutSpriteKitTutorialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		66DF6A5117FB871B00CC9BD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BreakoutSpriteKitTutorial.app/BreakoutSpriteKitTutorial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BreakoutSpriteKitTutorial/BreakoutSpriteKitTutorial-Prefix.pch";
+				INFOPLIST_FILE = "BreakoutSpriteKitTutorialTests/BreakoutSpriteKitTutorialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66DF6A0E17FB871B00CC9BD1 /* Build configuration list for PBXProject "BreakoutSpriteKitTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66DF6A4A17FB871B00CC9BD1 /* Debug */,
+				66DF6A4B17FB871B00CC9BD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66DF6A4C17FB871B00CC9BD1 /* Build configuration list for PBXNativeTarget "BreakoutSpriteKitTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66DF6A4D17FB871B00CC9BD1 /* Debug */,
+				66DF6A4E17FB871B00CC9BD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		66DF6A4F17FB871B00CC9BD1 /* Build configuration list for PBXNativeTarget "BreakoutSpriteKitTutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66DF6A5017FB871B00CC9BD1 /* Debug */,
+				66DF6A5117FB871B00CC9BD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66DF6A0B17FB871B00CC9BD1 /* Project object */;
+}
