@@ -89,4 +89,27 @@ static NSString* blockNodeCategoryName = @"blockNode";
     }
 }
 
+-(void)touchesMoved:(NSSet*)touches withEvent:(UIEvent*)event {
+    // 1 Check whether user tapped paddle
+    if (self.isFingerOnPaddle) {
+        // 2 Get touch location
+        UITouch* touch = [touches anyObject];
+        CGPoint touchLocation = [touch locationInNode:self];
+        CGPoint previousLocation = [touch previousLocationInNode:self];
+        // 3 Get node for paddle
+        SKSpriteNode* paddle = (SKSpriteNode*)[self childNodeWithName: paddleCategoryName];
+        // 4 Calculate new position along x for paddle
+        int paddleX = paddle.position.x + (touchLocation.x - previousLocation.x);
+        // 5 Limit x so that the paddle will not leave the screen to left or right
+        paddleX = MAX(paddleX, paddle.size.width/2);
+        paddleX = MIN(paddleX, self.size.width - paddle.size.width/2);
+        // 6 Update position of paddle
+        paddle.position = CGPointMake(paddleX, paddle.position.y);
+    }
+}
+
+-(void)touchesEnded:(NSSet*)touches withEvent:(UIEvent*)event {
+    self.isFingerOnPaddle = NO;
+}
+
 @end
