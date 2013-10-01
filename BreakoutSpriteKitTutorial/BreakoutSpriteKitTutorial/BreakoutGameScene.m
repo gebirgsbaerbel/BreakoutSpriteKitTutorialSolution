@@ -29,6 +29,13 @@ static NSString* blockNodeCategoryName = @"blockNode";
         [self addChild:background];
         
         self.physicsWorld.gravity = CGVectorMake(0.0f, 0.0f);
+        
+        // 1 Create an physics body that borders the screen
+        SKPhysicsBody* borderBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
+        // 2 Set physicsBody of scene to borderBody
+        self.physicsBody = borderBody;
+        // 3 Set the friction of that physicsBody to 0
+        self.physicsBody.friction = 0.0f;
     }
     return self;
 }
