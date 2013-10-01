@@ -14,6 +14,13 @@ static NSString* blockCategoryName = @"block";
 static NSString* blockNodeCategoryName = @"blockNode";
 
 
+@interface BreakoutGameScene()
+
+@property (nonatomic) BOOL isFingerOnPaddle;
+
+@end
+
+
 @implementation BreakoutGameScene
 
 -(id)initWithSize:(CGSize)size {
