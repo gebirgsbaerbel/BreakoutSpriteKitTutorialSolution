@@ -27,6 +27,8 @@ static NSString* blockNodeCategoryName = @"blockNode";
         }
         background.position = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
         [self addChild:background];
+        
+        self.physicsWorld.gravity = CGVectorMake(0.0f, 0.0f);
     }
     return self;
 }
