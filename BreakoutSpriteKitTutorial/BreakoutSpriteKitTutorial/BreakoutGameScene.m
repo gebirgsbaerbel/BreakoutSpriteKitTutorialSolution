@@ -36,6 +36,23 @@ static NSString* blockNodeCategoryName = @"blockNode";
         self.physicsBody = borderBody;
         // 3 Set the friction of that physicsBody to 0
         self.physicsBody.friction = 0.0f;
+        
+        // 1
+        SKSpriteNode* ball = [SKSpriteNode spriteNodeWithImageNamed: @"ball.png"];
+        ball.name = ballCategoryName;
+        ball.position = CGPointMake(self.frame.size.width/3, self.frame.size.height/3);
+        [self addChild:ball];
+        
+        // 2
+        ball.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:ball.frame.size.width/2];
+        // 3
+        ball.physicsBody.friction = 0.0f;
+        // 4
+        ball.physicsBody.restitution = 1.0f;
+        // 5
+        ball.physicsBody.linearDamping = 0.0f;
+        // 6
+        ball.physicsBody.allowsRotation = NO;
     }
     return self;
 }
