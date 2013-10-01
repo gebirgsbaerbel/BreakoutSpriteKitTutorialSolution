@@ -13,6 +13,11 @@ static NSString* paddleCategoryName = @"paddle";
 static NSString* blockCategoryName = @"block";
 static NSString* blockNodeCategoryName = @"blockNode";
 
+static const uint32_t ballCategory  = 0x1 << 0;  // 00000000000000000000000000000001
+static const uint32_t bottomCategory = 0x1 << 1; // 00000000000000000000000000000010
+static const uint32_t blockCategory = 0x1 << 2;  // 00000000000000000000000000000100
+static const uint32_t paddleCategory = 0x1 << 3; // 00000000000000000000000000001000
+
 
 @interface BreakoutGameScene()
 
