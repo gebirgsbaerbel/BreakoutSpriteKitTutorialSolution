@@ -53,6 +53,8 @@ static NSString* blockNodeCategoryName = @"blockNode";
         ball.physicsBody.linearDamping = 0.0f;
         // 6
         ball.physicsBody.allowsRotation = NO;
+        
+        [ball.physicsBody applyImpulse:CGVectorMake(10.0f, -10.0f)];
     }
     return self;
 }
