@@ -29,6 +29,7 @@
 		66DF6A5D17FB87DB00CC9BD1 /* bg@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A5717FB87DA00CC9BD1 /* bg@2x~iphone.png */; };
 		66DF6A5E17FB87DB00CC9BD1 /* bg~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A5817FB87DA00CC9BD1 /* bg~ipad.png */; };
 		66DF6A5F17FB87DB00CC9BD1 /* bg~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A5917FB87DA00CC9BD1 /* bg~iphone.png */; };
+		66DF6A6417FC6E1500CC9BD1 /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DF6A6317FC6E1500CC9BD1 /* GameOverScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		66DF6A5717FB87DA00CC9BD1 /* bg@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x~iphone.png"; sourceTree = "<group>"; };
 		66DF6A5817FB87DA00CC9BD1 /* bg~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg~ipad.png"; sourceTree = "<group>"; };
 		66DF6A5917FB87DA00CC9BD1 /* bg~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg~iphone.png"; sourceTree = "<group>"; };
+		66DF6A6217FC6E1500CC9BD1 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
+		66DF6A6317FC6E1500CC9BD1 /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,8 @@
 				66DF6A2E17FB871B00CC9BD1 /* ViewController.m */,
 				66DF6A3017FB871B00CC9BD1 /* BreakoutGameScene.h */,
 				66DF6A3117FB871B00CC9BD1 /* BreakoutGameScene.m */,
+				66DF6A6217FC6E1500CC9BD1 /* GameOverScene.h */,
+				66DF6A6317FC6E1500CC9BD1 /* GameOverScene.m */,
 				66DF6A5217FB87DA00CC9BD1 /* Resources */,
 				66DF6A3517FB871B00CC9BD1 /* Images.xcassets */,
 				66DF6A1F17FB871B00CC9BD1 /* Supporting Files */,
@@ -298,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66DF6A6417FC6E1500CC9BD1 /* GameOverScene.m in Sources */,
 				66DF6A3217FB871B00CC9BD1 /* BreakoutGameScene.m in Sources */,
 				66DF6A2F17FB871B00CC9BD1 /* ViewController.m in Sources */,
 				66DF6A2917FB871B00CC9BD1 /* AppDelegate.m in Sources */,
@@ -512,6 +518,7 @@
 				66DF6A4E17FB871B00CC9BD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66DF6A4F17FB871B00CC9BD1 /* Build configuration list for PBXNativeTarget "BreakoutSpriteKitTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +527,7 @@
 				66DF6A5117FB871B00CC9BD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

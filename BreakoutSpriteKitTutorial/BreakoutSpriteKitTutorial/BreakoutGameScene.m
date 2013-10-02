@@ -7,6 +7,7 @@
 //
 
 #import "BreakoutGameScene.h"
+#import "GameOverScene.h"
 
 static NSString* ballCategoryName = @"ball";
 static NSString* paddleCategoryName = @"paddle";
@@ -145,7 +146,8 @@ static const uint32_t paddleCategory = 0x1 << 3; // 0000000000000000000000000000
     // 3 react to the contact between ball and bottom
     if (firstBody.categoryBitMask == ballCategory && secondBody.categoryBitMask == bottomCategory) {
         //TODO: Replace the log statement with display of Game Over Scene
-        NSLog(@"Hit bottom. First contact has been made.");
+        GameOverScene* gameOverScene = [[GameOverScene alloc] initWithSize:self.frame.size playerWon:NO];
+        [self.view presentScene:gameOverScene];
     }
 }
 
