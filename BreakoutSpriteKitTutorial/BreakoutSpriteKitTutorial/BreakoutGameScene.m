@@ -32,13 +32,6 @@ static const uint32_t paddleCategory = 0x1 << 3; // 0000000000000000000000000000
 -(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         SKSpriteNode* background = [SKSpriteNode spriteNodeWithImageNamed:@"bg.png"];
-        // Use broader background for iPhone 5
-        if (self.frame.size.width == 568) {
-            background = [SKSpriteNode spriteNodeWithImageNamed:@"bg-568h.png"];
-        } else {
-            background = [SKSpriteNode spriteNodeWithImageNamed:@"bg.png"];
-            
-        }
         background.position = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
         [self addChild:background];
         

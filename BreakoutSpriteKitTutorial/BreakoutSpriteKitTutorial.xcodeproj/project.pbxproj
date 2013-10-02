@@ -24,7 +24,6 @@
 		66DF6A4717FB871B00CC9BD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A4517FB871B00CC9BD1 /* InfoPlist.strings */; };
 		66DF6A4917FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DF6A4817FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests.m */; };
 		66DF6A5A17FB87DB00CC9BD1 /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A5317FB87DA00CC9BD1 /* assets.atlas */; };
-		66DF6A5B17FB87DB00CC9BD1 /* bg-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A5517FB87DA00CC9BD1 /* bg-568h@2x~iphone.png */; };
 		66DF6A5C17FB87DB00CC9BD1 /* bg@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A5617FB87DA00CC9BD1 /* bg@2x~ipad.png */; };
 		66DF6A5D17FB87DB00CC9BD1 /* bg@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A5717FB87DA00CC9BD1 /* bg@2x~iphone.png */; };
 		66DF6A5E17FB87DB00CC9BD1 /* bg~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 66DF6A5817FB87DA00CC9BD1 /* bg~ipad.png */; };
@@ -66,7 +65,6 @@
 		66DF6A4617FB871B00CC9BD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66DF6A4817FB871B00CC9BD1 /* BreakoutSpriteKitTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreakoutSpriteKitTutorialTests.m; sourceTree = "<group>"; };
 		66DF6A5317FB87DA00CC9BD1 /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = "<group>"; };
-		66DF6A5517FB87DA00CC9BD1 /* bg-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-568h@2x~iphone.png"; sourceTree = "<group>"; };
 		66DF6A5617FB87DA00CC9BD1 /* bg@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x~ipad.png"; sourceTree = "<group>"; };
 		66DF6A5717FB87DA00CC9BD1 /* bg@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x~iphone.png"; sourceTree = "<group>"; };
 		66DF6A5817FB87DA00CC9BD1 /* bg~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg~ipad.png"; sourceTree = "<group>"; };
@@ -191,7 +189,6 @@
 		66DF6A5417FB87DA00CC9BD1 /* backgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				66DF6A5517FB87DA00CC9BD1 /* bg-568h@2x~iphone.png */,
 				66DF6A5617FB87DA00CC9BD1 /* bg@2x~ipad.png */,
 				66DF6A5717FB87DA00CC9BD1 /* bg@2x~iphone.png */,
 				66DF6A5817FB87DA00CC9BD1 /* bg~ipad.png */,
@@ -282,7 +279,6 @@
 				66DF6A5A17FB87DB00CC9BD1 /* assets.atlas in Resources */,
 				66DF6A5C17FB87DB00CC9BD1 /* bg@2x~ipad.png in Resources */,
 				66DF6A5F17FB87DB00CC9BD1 /* bg~iphone.png in Resources */,
-				66DF6A5B17FB87DB00CC9BD1 /* bg-568h@2x~iphone.png in Resources */,
 				66DF6A2C17FB871B00CC9BD1 /* Main.storyboard in Resources */,
 				66DF6A5D17FB87DB00CC9BD1 /* bg@2x~iphone.png in Resources */,
 			);
