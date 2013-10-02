@@ -160,6 +160,12 @@ static const uint32_t paddleCategory = 0x1 << 3; // 0000000000000000000000000000
         GameOverScene* gameOverScene = [[GameOverScene alloc] initWithSize:self.frame.size playerWon:NO];
         [self.view presentScene:gameOverScene];
     }
+    
+    
+    if (firstBody.categoryBitMask == ballCategory && secondBody.categoryBitMask == blockCategory) {
+        [secondBody.node removeFromParent];
+        //TODO: check if the game has been won
+    }
 }
 
 @end
