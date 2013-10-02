@@ -82,7 +82,7 @@ static const uint32_t paddleCategory = 0x1 << 3; // 0000000000000000000000000000
         ball.physicsBody.categoryBitMask = ballCategory;
         paddle.physicsBody.categoryBitMask = paddleCategory;
         
-        ball.physicsBody.contactTestBitMask = bottomCategory;
+        ball.physicsBody.contactTestBitMask = bottomCategory | blockCategory;
         
         self.physicsWorld.contactDelegate = self;
         
