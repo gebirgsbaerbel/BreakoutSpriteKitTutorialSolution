@@ -179,4 +179,16 @@ static const uint32_t paddleCategory = 0x1 << 3; // 0000000000000000000000000000
     return numberOfBricks <= 0;
 }
 
+-(void)update:(CFTimeInterval)currentTime {
+    /* Called before each frame is rendered */
+    SKNode* ball = [self childNodeWithName: ballCategoryName];
+    static int maxSpeed = 1000;
+    float speed = sqrt(ball.physicsBody.velocity.dx*ball.physicsBody.velocity.dx + ball.physicsBody.velocity.dy * ball.physicsBody.velocity.dy);
+    if (speed > maxSpeed) {
+        ball.physicsBody.linearDamping = 0.4f;
+    } else {
+        ball.physicsBody.linearDamping = 0.0f;
+    }
+}
+
 @end
