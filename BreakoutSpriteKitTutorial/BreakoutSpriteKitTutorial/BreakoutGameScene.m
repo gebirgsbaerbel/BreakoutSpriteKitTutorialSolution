@@ -160,12 +160,23 @@ static const uint32_t paddleCategory = 0x1 << 3; // 0000000000000000000000000000
         GameOverScene* gameOverScene = [[GameOverScene alloc] initWithSize:self.frame.size playerWon:NO];
         [self.view presentScene:gameOverScene];
     }
-    
-    
     if (firstBody.categoryBitMask == ballCategory && secondBody.categoryBitMask == blockCategory) {
         [secondBody.node removeFromParent];
-        //TODO: check if the game has been won
+        if ([self isGameWon]) {
+            GameOverScene* gameWonScene = [[GameOverScene alloc] initWithSize:self.frame.size playerWon:YES];
+            [self.view presentScene:gameWonScene];
+        }
     }
+}
+
+-(BOOL) isGameWon {
+    int numberOfBricks = 0;
+    for (SKNode* node in self.children) {
+        if ([node.name isEqual: blockCategoryName]) {
+            numberOfBricks++;
+        }
+    }
+    return numberOfBricks <= 0;
 }
 
 @end
