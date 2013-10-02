@@ -78,6 +78,19 @@ static const uint32_t paddleCategory = 0x1 << 3; // 0000000000000000000000000000
         paddle.physicsBody.friction = 0.4f;
         // make physicsBody static
         paddle.physicsBody.dynamic = NO;
+        
+        CGRect bottomRect = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, 1);
+        SKNode* bottom = [SKNode node];
+        bottom.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:bottomRect];
+        [self addChild:bottom];
+        
+        bottom.physicsBody.categoryBitMask = bottomCategory;
+        ball.physicsBody.categoryBitMask = ballCategory;
+        paddle.physicsBody.categoryBitMask = paddleCategory;
+        
+        ball.physicsBody.contactTestBitMask = bottomCategory;
+        
+        self.physicsWorld.contactDelegate = self;
     }
     return self;
 }
@@ -115,6 +128,25 @@ static const uint32_t paddleCategory = 0x1 << 3; // 0000000000000000000000000000
 
 -(void)touchesEnded:(NSSet*)touches withEvent:(UIEvent*)event {
     self.isFingerOnPaddle = NO;
+}
+
+- (void)didBeginContact:(SKPhysicsContact*)contact {
+    // 1 Create local variables for two physics bodies
+    SKPhysicsBody* firstBody;
+    SKPhysicsBody* secondBody;
+    // 2 Assign the two physics bodies so that the one with the lower category is always stored in firstBody
+    if (contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask) {
+        firstBody = contact.bodyA;
+        secondBody = contact.bodyB;
+    } else {
+        firstBody = contact.bodyB;
+        secondBody = contact.bodyA;
+    }
+    // 3 react to the contact between ball and bottom
+    if (firstBody.categoryBitMask == ballCategory && secondBody.categoryBitMask == bottomCategory) {
+        //TODO: Replace the log statement with display of Game Over Scene
+        NSLog(@"Hit bottom. First contact has been made.");
+    }
 }
 
 @end
