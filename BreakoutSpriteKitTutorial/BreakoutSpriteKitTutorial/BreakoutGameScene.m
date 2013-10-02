@@ -85,6 +85,24 @@ static const uint32_t paddleCategory = 0x1 << 3; // 0000000000000000000000000000
         ball.physicsBody.contactTestBitMask = bottomCategory;
         
         self.physicsWorld.contactDelegate = self;
+        
+        // 1 Store some useful variables
+        int numberOfBlocks = 3;
+        int blockWidth = [SKSpriteNode spriteNodeWithImageNamed:@"block.png"].size.width;
+        float padding = 20.0f;
+        // 2 Calculate the xOffset
+        float xOffset = (self.frame.size.width - (blockWidth * numberOfBlocks + padding * (numberOfBlocks-1))) / 2;
+        // 3 Create the blocks and add them to the scene
+        for (int i = 1; i <= numberOfBlocks; i++) {
+            SKSpriteNode* block = [SKSpriteNode spriteNodeWithImageNamed:@"block.png"];
+            block.position = CGPointMake((i-0.5f)*block.frame.size.width + (i-1)*padding + xOffset, self.frame.size.height * 0.8f);
+            block.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:block.frame.size];
+            block.physicsBody.allowsRotation = NO;
+            block.physicsBody.friction = 0.0f;
+            block.name = blockCategoryName;
+            block.physicsBody.categoryBitMask = blockCategory;
+            [self addChild:block];
+        }
     }
     return self;
 }
